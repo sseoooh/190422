@@ -148,7 +148,7 @@ html.sub {
 .flight-field .flight-single.active {
 }
 .flight-field .flight-single.active:before {
-	background: url('../../images/common/flight_field_left.png') 0 0 no-repeat;
+	/* background: 0 0 no-repeat;  */
 	content: '';
 	display: block;
 	height: 80px;

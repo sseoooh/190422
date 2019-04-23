@@ -11,9 +11,10 @@ app = (x=>{
 		let setContentView=()=>{
 			$.when(
 					$.getScript($.js()+'/compo.js'),
-					$.getScript($.js()+'/auth.js')
+					$.getScript($.js()+'/auth.js'),
+					$.getScript($.js()+'/aaa.js')
 			).done(()=>{
-				auth.init();
+				aaa.init();
 			});
 		}
 		return {init:init, onCreate:onCreate};

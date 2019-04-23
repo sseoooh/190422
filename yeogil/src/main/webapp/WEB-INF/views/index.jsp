@@ -9,11 +9,13 @@
 	<link rel="stylesheet" href="<%=application.getContextPath()%>/resources/css/common/daterangepicker.css"/>
 	<link rel="stylesheet" href="<%=application.getContextPath()%>/resources/css/common/layout.css"/>
 	<link rel="stylesheet" href="<%=application.getContextPath()%>/resources/css/common/main.css"/>
-	<link rel="stylesheet" href="<%=application.getContextPath()%>/resources/css/lookup.css"/>
+	<%-- <link rel="stylesheet" href="<%=application.getContextPath()%>/resources/css/lookup.css"/> --%>
 	
 </head>
   <body>
-  
+  <div class="main">
+  <div class="content-header">
+  <div class="search-wrap">
   <div class="search-box">
 				<form method="post" id="airSearchForm" name="airSearchForm">
 					<!--  여행 타입 -->
@@ -105,7 +107,7 @@
 							<span class="radio-txt">다구간</span>
 						</label>
 					</div>
-					<div class="flight-field">
+					<div class="flight-field"  id="flight-field">
 						<div class="flight-single active">
 							<div class="fl-route">
 								<div class="fl-item fl-field-from">
@@ -145,7 +147,7 @@
 									<input id="date-range201" autocomplete="off" class="input-box" size="20" value="" placeholder="오는날" readonly="readonly">
 								</div>
 								<div class="datepick single">
-									<input id="one-input" style="width:400px" size="40" autocomplete="off" value="" placeholder="가는날" readonly="">
+									<input id="one-input" style="width:400px" size="40" autocomplete="off" value="" placeholder="가는날" >
 								</div>
 							</div>
 						</div>
@@ -318,7 +320,7 @@
 				</form>
 			</div>
 			
-			
+		<div id="content" class="main" style="margin: 98px auto 0;">
 			<section class="main-howto">
 			<div class="main-type">
 				<dl>
@@ -347,30 +349,16 @@
 				</ul>
 			</div>
 		</section>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+	</div>		
+</div>
+</div>	
+</div>	
 
 <script src="<%=application.getContextPath()%>/resources/js/app.js"></script>
 <script src="<%=application.getContextPath()%>/resources/js/router.js"></script>
 <script src="<%=application.getContextPath()%>/resources/js/compo.js"></script>
 <script src="<%=application.getContextPath()%>/resources/js/auth.js"></script>
-    
+<script src="<%=application.getContextPath()%>/resources/js/aaa.js"></script>
 <script>
 app.init('<%=application.getContextPath()%>');
 </script>
