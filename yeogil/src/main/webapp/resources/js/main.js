@@ -1,9 +1,9 @@
 "use strict"
-var airport = airport || {};
-airport = (x=>{													
+var main = main || {};
+main = (x=>{													
 	const WHEN_ERR = '호출하는 JS파일을 찾지 못했습니다.'
 		let init=x=>{
-			airport.$.init(x);
+			main.$.init(x);
 		}
 		let onCreate=()=>{
 			setContentView();
@@ -21,11 +21,11 @@ airport = (x=>{
 })();
 
 
-airport.$ ={
+main.$ ={
 		init : x=>{
 			$.getScript(x+'/resources/js/router.js',()=>{
 				$.extend(new Session(x));
-				airport.onCreate();
+				main.onCreate();
 			})
 			}
 		};

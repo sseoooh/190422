@@ -263,7 +263,7 @@ compo = {
 		+'</ul>'
 		+'</div>'
 		+'</div>'
-		+'<section class="section03 tab-cont">'
+		+'<section id="airport_result_empty" class="section03 tab-cont">'
 		+'<div class="section-wrap tab-view">'
 		+'<div class="content-aside">'
 		+'<form class="filter-wrap">'
@@ -10895,7 +10895,6 @@ compo = {
 		+'</div>'
 		+'</div>'
 		+'<div id="bx-pager02" class="bx-controls"></div>';
-
 	},
 	
 	hotel_bottom:()=>{ 
@@ -11040,6 +11039,9 @@ compo = {
 		+'</div></div></div><div class="bx-controls"></div></div>'
 		+'<div id="bx-pager02" class="bx-controls"></div>'
 		+'</div>'
-	}
+	},
 	
+	hotel_search_result:()=>{
+		return 
+	}
 }

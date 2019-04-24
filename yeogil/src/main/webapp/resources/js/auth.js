@@ -32,9 +32,9 @@ auth =(()=>{
 		};
 		let payment=()=>{
 			alert("결제창이동");
-			$('#qusghk').empty();
-			$(compo.payment_top()).appendTo('#qusghk');
-			$(compo.payment_mid()).appendTo('#qusghk');
+			$('#airport_result_empty').empty();
+			$(compo.payment_top()).appendTo('#airport_result_empty');
+			$(compo.payment_mid()).appendTo('#airport_result_empty');
 			
 		};
 		let modify=()=>{

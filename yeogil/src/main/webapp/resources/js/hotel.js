@@ -21,7 +21,6 @@ hotel =(()=>{
 				hotel_page_move();
 				hotel_event();
 			});
-			
 		};
 		
 		let hotel_modify=()=>{
@@ -34,7 +33,9 @@ hotel =(()=>{
 		
 		let hotel_page_move=()=>{
 			$('#main_search_btn').click(function(){
-				alert("호텔검색결과");
+				alert("호텔결과");
+				$('#qusghk').empty();
+				$(compo.hotel_search_result()).appendTo("#qusghk");
 			});
 		};
 		
