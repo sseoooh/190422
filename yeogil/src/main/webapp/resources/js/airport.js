@@ -1,9 +1,9 @@
 "use strict"
-var app = app || {};
-app = (x=>{													
+var airport = airport || {};
+airport = (x=>{													
 	const WHEN_ERR = '호출하는 JS파일을 찾지 못했습니다.'
 		let init=x=>{
-			app.$.init(x);
+			airport.$.init(x);
 		}
 		let onCreate=()=>{
 			setContentView();
@@ -11,21 +11,21 @@ app = (x=>{
 		let setContentView=()=>{
 			$.when(
 					$.getScript($.js()+'/compo.js'),
-					$.getScript($.js()+'/auth.js'),
-					$.getScript($.js()+'/aaa.js')
+					$.getScript($.js()+'/auth.js')
+					
 			).done(()=>{
-				aaa.init();
+				auth.init();
 			});
 		}
 		return {init:init, onCreate:onCreate};
 })();
 
 
-app.$ ={
+airport.$ ={
 		init : x=>{
 			$.getScript(x+'/resources/js/router.js',()=>{
 				$.extend(new Session(x));
-				app.onCreate();
+				airport.onCreate();
 			})
 			}
 		};
